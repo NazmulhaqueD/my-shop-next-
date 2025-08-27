@@ -22,7 +22,7 @@ export default function Navbar() {
                 <Link href="/dashboard" className="hover:text-blue-600">
                     Dashboard
                 </Link>
-                <Link href="/login" className="bg-blue-600 px-4 py-2 rounded-lg text-white font-bold">
+                <Link href="/login" className="bg-blue-600 px-4 py-3 rounded-lg text-white font-bold">
                     Login
                 </Link>
             </div>

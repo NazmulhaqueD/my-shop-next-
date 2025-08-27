@@ -23,6 +23,28 @@ const products = [
         price: "$45",
         image: "https://i.postimg.cc/50NCfJHK/ahmed-helal-t1-Cfe-IOl-GRk-unsplash.jpg",
     },
+    {
+        id: 2,
+        name: "Smart Watch",
+        description: "Track your fitness and stay connected.",
+        price: "$90",
+        image: "https://i.postimg.cc/R0x152Q2/infino-photography-Kjs-RBYfj9h-A-unsplash.jpg",
+    },
+     {
+        id: 3,
+        name: "Gaming Mouse",
+        description: "Ergonomic design with customizable buttons.",
+        price: "$45",
+        image: "https://i.postimg.cc/50NCfJHK/ahmed-helal-t1-Cfe-IOl-GRk-unsplash.jpg",
+    },
+     {
+        id: 1,
+        name: "Wireless Headphones",
+        description: "High quality sound with noise cancellation.",
+        price: "$120",
+        image: "https://i.postimg.cc/bJ8Rb4Z1/ervo-rocks-Zam8-Tv-Eg-N5o-unsplash.jpg",
+    },
+   
 ];
 
 export default function ProductHighlights() {

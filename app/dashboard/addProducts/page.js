@@ -70,7 +70,8 @@ export default function AddProductPage() {
                 <textarea
                     name="description"
                     placeholder="Description"
-                    className="w-full border p-2 rounded"
+                    className="w-full border p-2 rounded resize-none"
+                    rows={10}
                 />
                 <button
                     type="submit"
