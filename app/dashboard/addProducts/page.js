@@ -1,3 +1,4 @@
+
 "use client";
 
 export default function AddProductPage() {
@@ -8,11 +9,13 @@ export default function AddProductPage() {
         e.preventDefault();
         const name = e.target.name.value;
         const price = e.target.price.value;
+        const photo = e.target.photo.value;
         const description = e.target.description.value;
 
         const productData = {
             name,
             price,
+            photo,
             description
         }
         try {
@@ -24,7 +27,7 @@ export default function AddProductPage() {
                 body: JSON.stringify(productData)
             });
 
-            const data = await res.json();
+            const data = await res.json(); 
             alert("Product added successfully!");
             e.target.reset(); // form reset
         } catch (err) {
@@ -51,6 +54,13 @@ export default function AddProductPage() {
                     required
                 />
                 <input
+                    type="text"
+                    name="photo"
+                    placeholder="Product photo url"
+                    className="w-full border p-2 rounded"
+                    required
+                />
+                <input
                     type="number"
                     name="price"
                     placeholder="Price"
@@ -70,5 +80,5 @@ export default function AddProductPage() {
                 </button>
             </form>
         </div>
-    );
+    );  
 }
