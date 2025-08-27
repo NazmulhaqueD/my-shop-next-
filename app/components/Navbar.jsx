@@ -19,10 +19,12 @@ export default function Navbar() {
                 <Link href="/products" className="hover:text-blue-600">
                     Products
                 </Link>
-                <Link href="/login" className="hover:text-blue-600">
+                <Link href="/dashboard" className="hover:text-blue-600">
+                    Dashboard
+                </Link>
+                <Link href="/login" className="bg-blue-600 px-4 py-2 rounded-lg text-white font-bold">
                     Login
                 </Link>
-                {/* পরে auth হলে এখানে Login এর বদলে Dashboard দেখাবে */}
             </div>
         </nav>
     );
