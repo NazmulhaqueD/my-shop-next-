@@ -1,5 +1,5 @@
 export default async function getProducts() {
-    const result = await fetch("http://localhost:5000/products")
+    const result = await fetch("https://social-serve-server.vercel.app/products")
 
     return result.json();
 }

@@ -17,15 +17,16 @@ export default async function ProductsPage() {
                 {allProducts?.map((product) => (
                     <div
                         key={product._id}
-                        className="border rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow bg-white"
+                        className=" rounded-2xl overflow-hidden shadow-lg shadow-gray-400 hover:shadow-xl hover:scale-105 transition-all duration-300  bg-white"
                     >
                         {/* Product Image */}
-                        <div className="relative w-full h-48">
+                        <div className="">
                             <Image
-                                src="https://i.postimg.cc/R0x152Q2/infino-photography-Kjs-RBYfj9h-A-unsplash.jpg"
+                                src={product.photo}
                                 alt="Picture of the author"
                                 width={500}
                                 height={500}
+                                className="w-full h-60"
                             />
                         </div>
 

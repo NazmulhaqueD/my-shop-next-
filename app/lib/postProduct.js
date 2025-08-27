@@ -1,5 +1,5 @@
 import { headers } from "next/headers";
 
 export default async function postProducts() {
-    const result = fetch('http://localhost:5000/products')
+    const result = fetch('https://social-serve-server.vercel.app/products')
 }
